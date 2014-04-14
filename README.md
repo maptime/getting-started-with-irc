@@ -22,17 +22,30 @@ Some suggestions:
 irc://irc.oftc.net/osm
 
 irc://irc.oftc.net/osm-dev
-irc://irc.oftc.net/hot
-irc://irc.oftc.net/osm-us
-irc://irc.oftc.net/osm-ca
-irc://irc.oftc.net/osm-diversity
-irc://irc.oftc.net/publiclabirc://irc.freenode.org/openstreetmap
-irc://irc.freenode.org/mapbox
-irc://irc.freenode.org/leaflet
-irc://irc.freenode.org/mapnik
-irc://irc.freenode.org/qgis
-irc://irc.freenode.org/postgis
-irc://irc.freenode.org/osgeo
+
+irc://irc.oftc.net/hot
+
+irc://irc.oftc.net/osm-us
+
+irc://irc.oftc.net/osm-ca
+
+irc://irc.oftc.net/osm-diversity
+
+irc://irc.oftc.net/publiclab
+
+irc://irc.freenode.org/openstreetmap
+
+irc://irc.freenode.org/mapbox
+
+irc://irc.freenode.org/leaflet
+
+irc://irc.freenode.org/mapnik
+
+irc://irc.freenode.org/qgis
+
+irc://irc.freenode.org/postgis
+
+irc://irc.freenode.org/osgeo
 
 Connecting to IRC via the web
 ========================
@@ -46,7 +59,7 @@ Using Adium on OSX
 Download [Adium](https://adium.im/), which is an open source chat client that can connect to IRC (and other chat protocols, such as AIM, Twitter, Windows Messenger, etc).
 
 
-Scriping Adium with AppleScript
+Scripting Adium with AppleScript
 -------------------------------
 
 If you follow a lot of chat rooms, it's a pain to connect to them all every time you log in. So I use some AppleScript to tell Adium which channels to connect to.
@@ -58,17 +71,44 @@ Copy the following scripts to some folder on your computer.
 Freenode script `adium-group-chat-freenode.scpt`:
 
 ```
-	tell application "Adium"		GetURL "irc://irc.freenode.org/openstreetmap"		GetURL "irc://irc.freenode.org/mapbox"		GetURL "irc://irc.freenode.org/leaflet"		GetURL "irc://irc.freenode.org/mapnik"		GetURL "irc://irc.freenode.org/qgis"		GetURL "irc://irc.freenode.org/postgis"		GetURL "irc://irc.freenode.org/cugos"		GetURL "irc://irc.freenode.org/osgeo"		GetURL "irc://irc.freenode.org/maptime"	end tell
+	tell application "Adium"
+		GetURL "irc://irc.freenode.org/openstreetmap"
+		GetURL "irc://irc.freenode.org/mapbox"
+		GetURL "irc://irc.freenode.org/leaflet"
+		GetURL "irc://irc.freenode.org/mapnik"
+		GetURL "irc://irc.freenode.org/qgis"
+		GetURL "irc://irc.freenode.org/postgis"
+		GetURL "irc://irc.freenode.org/cugos"
+		GetURL "irc://irc.freenode.org/osgeo"
+		GetURL "irc://irc.freenode.org/maptime"
+	end tell
 ```
-oftc script `adium-group-chat-oftc.scpt`:
 
-```	tell application "Adium"		GetURL "irc://irc.oftc.net/osm"		GetURL "irc://irc.oftc.net/osm-dev"		GetURL "irc://irc.oftc.net/hot"		GetURL "irc://irc.oftc.net/osm-us"		GetURL "irc://irc.oftc.net/osm-ca"		GetURL "irc://irc.oftc.net/osm-diversity"		GetURL "irc://irc.oftc.net/publiclab"	end tell
-```
-Script to call the other scripts `adium-group-chat.scpt`:
-```
-run script ("/Users/alan/Dropbox/bin/adium-group-chat-freenode.scpt" as POSIX file)run script ("/Users/alan/Dropbox/bin/adium-group-chat-oftc.scpt" as POSIX file)
-```
-(Replace the path with the path to wherever you save those scripts).
+oftc script `adium-group-chat-oftc.scpt`:
+
+```
+	tell application "Adium"
+		GetURL "irc://irc.oftc.net/osm"
+		GetURL "irc://irc.oftc.net/osm-dev"
+		GetURL "irc://irc.oftc.net/hot"
+		GetURL "irc://irc.oftc.net/osm-us"
+		GetURL "irc://irc.oftc.net/osm-ca"
+		GetURL "irc://irc.oftc.net/osm-diversity"
+		GetURL "irc://irc.oftc.net/publiclab"
+	end tell
+
+```
+
+Script to call the other scripts `adium-group-chat.scpt`:
+
+```
+
+run script ("/Users/alan/Dropbox/bin/adium-group-chat-freenode.scpt" as POSIX file)
+run script ("/Users/alan/Dropbox/bin/adium-group-chat-oftc.scpt" as POSIX file)
+
+```
+
+(Replace the path with the path to wherever you save those scripts).
 
 Finally, in _Adium > Preferences... > Events_, go to the "You Connect" event, add the action "Run an AppleScript" and Browse for the location of `adium-group-chat.scpt`.
 Registering your username on IRC hosts
