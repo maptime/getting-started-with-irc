@@ -19,33 +19,20 @@ irc://irc.freenode.net/#maptime of course!
 
 Some suggestions:
 
-irc://irc.oftc.net/osm
-
-irc://irc.oftc.net/osm-dev
-
-irc://irc.oftc.net/hot
-
-irc://irc.oftc.net/osm-us
-
-irc://irc.oftc.net/osm-ca
-
-irc://irc.oftc.net/osm-diversity
-
-irc://irc.oftc.net/publiclab
-
-irc://irc.freenode.org/openstreetmap
-
-irc://irc.freenode.org/mapbox
-
-irc://irc.freenode.org/leaflet
-
-irc://irc.freenode.org/mapnik
-
-irc://irc.freenode.org/qgis
-
-irc://irc.freenode.org/postgis
-
-irc://irc.freenode.org/osgeo
+- irc://irc.oftc.net/osm
+- irc://irc.oftc.net/osm-dev
+- irc://irc.oftc.net/hot
+- irc://irc.oftc.net/osm-us
+- irc://irc.oftc.net/osm-ca
+- irc://irc.oftc.net/osm-diversity
+- irc://irc.oftc.net/publiclab
+- irc://irc.freenode.org/openstreetmap
+- irc://irc.freenode.org/mapbox
+- irc://irc.freenode.org/leaflet
+- irc://irc.freenode.org/mapnik
+- irc://irc.freenode.org/qgis
+- irc://irc.freenode.org/postgis
+- irc://irc.freenode.org/osgeo
 
 Connecting to IRC via the web
 ========================
