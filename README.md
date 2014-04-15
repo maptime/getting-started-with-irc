@@ -53,14 +53,13 @@ Connecting to IRC via the web
 Normally people use an IRC client to connect to IRC chat rooms. But you want to connect more quickly without a lot of set up, you can use the web for the IRC server you want to connect to. For example: http://webchat.freenode.net/ and http://www.oftc.net/WebChat/
 
 
-Using Adium on OSX
-==================
+## Mac OSX Clients
+
+### Adium
 
 Download [Adium](https://adium.im/), which is an open source chat client that can connect to IRC (and other chat protocols, such as AIM, Twitter, Windows Messenger, etc).
 
-
-Scripting Adium with AppleScript
--------------------------------
+#### Scripting Adium with AppleScript
 
 If you follow a lot of chat rooms, it's a pain to connect to them all every time you log in. So I use some AppleScript to tell Adium which channels to connect to.
 
@@ -111,6 +110,20 @@ run script ("/Users/alan/Dropbox/bin/adium-group-chat-oftc.scpt" as POSIX file)
 (Replace the path with the path to wherever you save those scripts).
 
 Finally, in _Adium > Preferences... > Events_, go to the "You Connect" event, add the action "Run an AppleScript" and Browse for the location of `adium-group-chat.scpt`.
+
+### Limechat
+
+Limechat is a free IRC client for Mac OSX. It allows you to connect to multiple servers and automatically join channels on startup.
+
+http://limechat.net/mac/
+
+### Textual
+
+Textual is a paid IRC client for Mac OSX (it also has a free trial version). It's very similiar to Limechat but has more features and is still being actively updated and maintained.
+
+http://www.codeux.com/textual/
+
+
 Registering your username on IRC hosts
 ===================
 This is important. Some info to start with here: http://freenode.net/faq.shtml#userregistration
